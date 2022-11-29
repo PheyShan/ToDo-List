@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Form</title>
+</head>
+<body>
+
+<!-- Insert the navbar fragment here-->
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+<div class="jumbotron">
+    <h1 class="display-4">New TODO item</h1>
+    <form id="newTodoForm" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="newTitle">Title</label>
+            <input type="text" class="form-control" id="newTitle">
+        </div>
+        <div class="form-group">
+            <label for="newDescription">Description</label>
+            <textarea type="text" class="form-control" id="newDescription"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="newTargetDate">Target Date</label>
+            <input type="date" class="form-control" id="newTargetDate">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Add</button>
+    </form>
+</div>
+
+<!-- SCRIPTS AND STYLES-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="js/todoItemController.js"></script>
+<script src="js/todoForm.js"></script>
+
+</body>
+</html>
