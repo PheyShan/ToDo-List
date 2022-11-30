@@ -2,7 +2,7 @@
 Visit the video recording on local host here: https://youtu.be/FbYOYzCQxFE
 
 # General Information
-The purpose of this spring project is to showcase my understanding of buiding a full stack application using Java, Spring Boot and MySQL as a database. 
+The purpose of this spring project is to showcase my understanding of building a full stack application using Java, Spring Boot and MySQL as a database. 
 
 # Languages used
 - Java
